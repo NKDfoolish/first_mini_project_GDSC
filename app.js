@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 let tasks = [];
 
 // Route lấy danh sách tasks
-app.get('/tasks', (req, res) => {
+app.get('/', (req, res) => {
     res.json({ success: true, tasks });
 });
 
